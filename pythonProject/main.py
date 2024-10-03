@@ -1,4 +1,4 @@
-from sys import prefix
+from sys import prefix #nieużyty import
 
 from selenium import webdriver
 from selenium.webdriver import Keys
@@ -16,7 +16,7 @@ elem = driver.find_element(By.CLASS_NAME, "fluid-button")
 print(elem.is_selected())
 print(elem.is_displayed())
 
-h2 = driver.find_element(By.TAG_NAME, "h2")
+h2 = driver.find_element(By.TAG_NAME, "h2") #lepiej uzyc aby szukalo elementu wg klasy lub id
 print(driver.title)
 print(h2.get_attribute("innerHTML"))
 assert "What is TypeScript?" in h2.get_attribute("innerHTML")
